@@ -1,0 +1,23 @@
+{
+  "name": "note-taker-11",
+  "version": "1.0.0",
+  "description": "/",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.2",
+    "jest": "^27.4.7"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Blackcat-Tinkerngineers/Adulting-is-hard"
+  },
+  "author": "Chelsie L Bangloy-Gonsalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blackcat-Tinkerngineers/Adulting-is-hard"
+  },
+  "homepage": "https://github.com/Blackcat-Tinkerngineers/Adulting-is-hard"
+}
