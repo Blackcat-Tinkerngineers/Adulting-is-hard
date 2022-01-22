@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-
-=======
 <div id="top"></div>
 
 # Title: Adulting is hard(Note Taker)
 
-
+<a href="https://note-taker-0011.herokuapp.com/">https://note-taker-0011.herokuapp.com/</a>
 ## Table of Contents
 
 * [About-the-project](#About-The-Project)
