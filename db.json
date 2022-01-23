@@ -1,0 +1,25 @@
+DECLARE @json NVARCHAR(4000) = N'{
+    "notes": {
+        "details": {
+            "id": 1,
+            "title": "Shopping list",
+            "date": "01-21-2022",
+            "note": [
+                "a": "apples",
+                "b": "bananas",
+                "c": "cookies"
+            ]
+        }
+    }
+}';
+SELECT * FROM OPENJSON(@json, '$.notes.details');
+
+"notes": {
+    "details": {
+        "id": 2,
+        "title": "Don't forget",
+        "date": "01-22-2022",
+        "note": "feed the alley cats on your way home"
+    }
+}
+}

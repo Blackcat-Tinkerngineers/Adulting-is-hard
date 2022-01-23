@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const path = require('path');
 const router = express.Router();
 const fs = require('fs');
 const dirPath = path.join(__dirname,'/index.html', '/notes.html');
 express.static(path.join(__dirname, '/public'));
+const favicon = require('serve-favicon');
 
 
 app.use(express.static('public'));
@@ -33,6 +34,11 @@ app.post('/notes/:id', (req, res) => {
   });
 });
 
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+
+// Add your routes here, etc.
 
 router.get('/',function(req,res){
   res.sendFile(path.join(public, '/index.html'));
