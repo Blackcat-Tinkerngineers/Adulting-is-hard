@@ -1,8 +1,8 @@
 <div id="top"></div>
 
-# Title: Adulting is hard(Note Taker)
+# Title: Note Taker
 
-<a href="https://note-taker-0011.herokuapp.com/">https://note-taker-0011.herokuapp.com/</a>
+
 ## Table of Contents
 
 * [About-the-project](#About-The-Project)
@@ -12,16 +12,16 @@
 * [Contact-information](#Contact-Information)
 
 
-  <p align="center"> Project Description</p>
+  ## About the Project
   <p></p>
-
-    <br />
-    <div align="center">
-</div>
+  
+The project assignment is to build a note tracker.
+Functions and user experience include; first, you are welcomed to the home page, which is routed to the notes section. 
+Via Notes pages, you will see previous note entries, and the right column is an open field area to add additional notes. 
+Upon typing your note, the top right on the navigation bar areas a save icon, and beside the previous entries, you can delete whichever you choose. 
 
 <p align="center">Live URL</p>
-<br>
-<div align="center"></div>
+<div align="center"><a href="https://note-taker-0011.herokuapp.com/">https://note-taker-0011.herokuapp.com/</a></div>
   
 <p align="center"><a href=/</p></a>
 <br>
@@ -30,8 +30,11 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+## Built With
 
+<a href="http://expressjs.com/">http://expressjs.com/</a>
+</br>
+<a hred="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -40,8 +43,15 @@
 <!-- GETTING STARTED -->
 
 
-### Installation
+## Installation
 
+npm i express
+<br>
+</br>
+<a href="https://www.npmjs.com/package/express">https://www.npmjs.com/package/express</a>
+<br>
+</br>
+<a href="http://expressjs.com/">http://expressjs.com/</a>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -81,11 +91,10 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 🐓<a href="https://twitter.com/clbgonsalves">https://twitter.com/clbgonsalves</a>
 <br>
-💌<a href="https://twitter.com/clbgonsalves">https://twitter.com/clbgonsalves</a>
+💌clbgonsalves@gmail.com
 <br>
 👩🏻‍💻<a href="https://www.linkedin.com/in/chelsiebgonsalves/">https://www.linkedin.com/in/chelsiebgonsalves/</a>
 <br>
-🧁<a href="https://github.com/Blackcat-Tinkerngineers/note-taker-11">https://github.com/Blackcat-Tinkerngineers/note-taker-11</a>
+🧁<a href="https://github.com/Blackcat-Tinkerngineers/note-taker-0011/">https://github.com/Blackcat-Tinkerngineers/note-taker-0011/</a>
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
->>>>>>> a40637b (initial commit)
