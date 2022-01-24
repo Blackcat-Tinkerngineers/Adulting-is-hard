@@ -1,55 +1,33 @@
 const express = require('express');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
-const path = require('path');
-const router = express.Router();
-const fs = require('fs');
-const dirPath = path.join(__dirname,'/index.html', '/notes.html');
-express.static(path.join(__dirname, '/public'));
-const favicon = require('serve-favicon');
+const {join} = require('path');
+let notes = require('./db/db.json');
 
-
-app.use(express.static('public'));
-app.use(express.static('files'));
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname,'public')));
 
-app.get('/notes', (req, res) => {
-  res.status(200).send({
-    date: '01-21-2022',
-    title: 'shopping list',
-    note: 'eggs'
-  });
+app.get('/',function(req,res){
+res.redirect("index.html");
+});
+app.get('/notes',function(req,res){
+res.redirect("notes.html");
 });
 
-app.post('/notes/:id', (req, res) => {
-  const { id } = req.params;
-  const { text } = req.body;
-
-  if (!text) {
-    return res.status(404).send({ message: 'Huston we have a problem! Tracker unable to update entry request' });
+app.get('/api/notes', (req, res) => {
+res.json(notes);
+});
+app.post('/api/notes', (req, res) => {
+  if(req.body){
+    req.body.id = Math.floor(Math.random() * 10000);
+    let newNote = req.body;
+    notes.push(newNote);
+    fs.writeFileSync('./db/db.json', JSON.stringify(notes));
+    res.json(notes);
   }
-  res.send({
-    Note: 'Tracker is ready for a new entry ${text} and ID of ${id}',
-
-  });
 });
 
-
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-
-
-// Add your routes here, etc.
-
-router.get('/',function(req,res){
-  res.sendFile(path.join(public, '/index.html'));
-
-});
-
-router.get('/notes',function(req,res){
-  res.sendFile(path.join(public, '/notes.html'));
-});
-
-
-app.use('/', router);
-app.listen(port, () => console.log('listening on port ${port}...'));
-
+app.listen(port, () => console.log(`listening on port ${port}...`));

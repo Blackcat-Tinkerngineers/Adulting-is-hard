@@ -5,15 +5,11 @@ body {
   padding: 0;
 }
 
-.bg-dark {
-  background-color: #afa2ad!important;
-}
 .save-note {
   display: none;
 }
 
 .icons i {
-  float: right;
   margin-left: 15px;
   margin-right: 15px;
   font-size: 1.5rem;
