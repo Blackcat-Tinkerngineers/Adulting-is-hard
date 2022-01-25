@@ -134,7 +134,6 @@ const handleRenderSaveBtn = () => {
 };
 
 
-
 // show the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
