@@ -22,9 +22,13 @@ Upon typing your note, the top right on the navigation bar areas a save icon, an
 
 <p align="center">Live URL</p>
 <div align="center"><a href="https://note-taker-0011.herokuapp.com/">https://note-taker-0011.herokuapp.com/</a></div>
-  
-<p align="center"><a href=/</p></a>
+
+![image](https://user-images.githubusercontent.com/88634637/151329495-c90e0561-d6fb-4f19-8c65-b3ede0d6cbac.png)
 <br>
+</br>
+![image](https://user-images.githubusercontent.com/88634637/151329578-6446ae68-7d08-4fa2-88bf-db83e58e7d9b.png)
+
+
 <div align="center"></div>
 
 
@@ -33,6 +37,7 @@ Upon typing your note, the top right on the navigation bar areas a save icon, an
 ## Built With
 
 <a href="http://expressjs.com/">http://expressjs.com/</a>
+<br>
 </br>
 <a hred="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
 
